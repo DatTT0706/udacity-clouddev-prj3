@@ -1,0 +1,264 @@
+Folder PATH listing
+Volume serial number is 02B7-9506
+C:.
+¦   .gitignore
+¦   docker-compose-build.yaml
+¦   docker-compose.yaml
+¦   README.md
+¦   tree.txt
+¦   
++---.circleci
+¦       config.yml
+¦       
++---CI_CD
+¦       aws-secret.yaml
+¦       env-configmap.yaml
+¦       env-secret.yaml
+¦       package-lock.json
+¦       reverseproxy-deployment.yaml
+¦       reverseproxy-service.yaml
+¦       udagram-api-feed-deployment.yaml
+¦       udagram-api-feed-service.yaml
+¦       udagram-api-user-deployment.yaml
+¦       udagram-api-user-service.yaml
+¦       udagram-frontend-deployment.yaml
+¦       udagram-frontend-service.yaml
+¦       
++---screenshot
+¦       be-feed-hpa.png
+¦       be-user-hpa.png
+¦       circle_ci_build.png
+¦       docker_hub.png
+¦       frontend-hpa.png
+¦       kubenetes_publicfrontend.png
+¦       kubernetes_backendfeed.png
+¦       kubernetes_backenduser_frontend.png
+¦       kubernetes_hpa.png
+¦       kubernetes_pods.png
+¦       kubernetes_publicreverseproxy.png
+¦       kubernetes_reverseproxy.png
+¦       logs_be_feed.png
+¦       logs_be_user.png
+¦       logs_fe.png
+¦       logs_reverseproxy.png
+¦       reverse-proxy-hpa.png
+¦       
++---udagram-api-feed
+¦   ¦   .dockerignore
+¦   ¦   Dockerfile
+¦   ¦   package-lock.json
+¦   ¦   package.json
+¦   ¦   tsconfig.json
+¦   ¦   tslint.json
+¦   ¦   
+¦   +---mock
+¦   ¦       xander0.jpg
+¦   ¦       xander1.jpg
+¦   ¦       xander2.jpg
+¦   ¦       
+¦   +---node_modules
+¦   +---src
+¦       ¦   aws.ts
+¦       ¦   sequelize.ts
+¦       ¦   server.ts
+¦       ¦   
+¦       +---config
+¦       ¦       config.ts
+¦       ¦       
+¦       +---controllers
+¦       ¦   +---v0
+¦       ¦       ¦   index.router.ts
+¦       ¦       ¦   model.index.ts
+¦       ¦       ¦   
+¦       ¦       +---feed
+¦       ¦           +---models
+¦       ¦           ¦       FeedItem.ts
+¦       ¦           ¦       
+¦       ¦           +---routes
+¦       ¦                   feed.router.ts
+¦       ¦                   
+¦       +---migrations
+¦               20190325-create-feed-item.js
+¦               
++---udagram-api-user
+¦   ¦   .dockerignore
+¦   ¦   Dockerfile
+¦   ¦   package-lock.json
+¦   ¦   package.json
+¦   ¦   tsconfig.json
+¦   ¦   tslint.json
+¦   ¦   
+¦   +---mock
+¦   ¦       xander0.jpg
+¦   ¦       xander1.jpg
+¦   ¦       xander2.jpg
+¦   ¦       
+¦   +---node_modules
+¦   +---src
+¦       ¦   aws.ts
+¦       ¦   sequelize.ts
+¦       ¦   server.ts
+¦       ¦   
+¦       +---config
+¦       ¦       config.ts
+¦       ¦       
+¦       +---controllers
+¦       ¦   +---v0
+¦       ¦       ¦   index.router.ts
+¦       ¦       ¦   model.index.ts
+¦       ¦       ¦   
+¦       ¦       +---users
+¦       ¦           +---models
+¦       ¦           ¦       User.ts
+¦       ¦           ¦       
+¦       ¦           +---routes
+¦       ¦                   auth.router.ts
+¦       ¦                   user.router.ts
+¦       ¦                   
+¦       +---migrations
+¦               20190328-create-user.js
+¦               
++---udagram-frontend
+¦   ¦   .dockerignore
+¦   ¦   .eslintrc.json
+¦   ¦   .gitignore
+¦   ¦   angular.json
+¦   ¦   Dockerfile
+¦   ¦   ionic.config.json
+¦   ¦   package-lock.json
+¦   ¦   package.json
+¦   ¦   tsconfig.json
+¦   ¦   tslint.json
+¦   ¦   
+¦   +---e2e
+¦   ¦   ¦   protractor.conf.js
+¦   ¦   ¦   tsconfig.e2e.json
+¦   ¦   ¦   
+¦   ¦   +---src
+¦   ¦           app.e2e-spec.ts
+¦   ¦           app.po.ts
+¦   ¦           
+¦   +---src
+¦   ¦   ¦   global.scss
+¦   ¦   ¦   index.html
+¦   ¦   ¦   karma.conf.js
+¦   ¦   ¦   main.ts
+¦   ¦   ¦   polyfills.ts
+¦   ¦   ¦   test.ts
+¦   ¦   ¦   tsconfig.app.json
+¦   ¦   ¦   tsconfig.spec.json
+¦   ¦   ¦   
+¦   ¦   +---app
+¦   ¦   ¦   ¦   app-routing.module.ts
+¦   ¦   ¦   ¦   app.component.html
+¦   ¦   ¦   ¦   app.component.spec.ts
+¦   ¦   ¦   ¦   app.component.ts
+¦   ¦   ¦   ¦   app.module.ts
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---api
+¦   ¦   ¦   ¦       api.module.ts
+¦   ¦   ¦   ¦       api.service.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---auth
+¦   ¦   ¦   ¦   ¦   auth.module.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---auth-login
+¦   ¦   ¦   ¦   ¦       auth-login.component.html
+¦   ¦   ¦   ¦   ¦       auth-login.component.scss
+¦   ¦   ¦   ¦   ¦       auth-login.component.spec.ts
+¦   ¦   ¦   ¦   ¦       auth-login.component.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---auth-menu-button
+¦   ¦   ¦   ¦   ¦   ¦   auth-menu-button.component.html
+¦   ¦   ¦   ¦   ¦   ¦   auth-menu-button.component.scss
+¦   ¦   ¦   ¦   ¦   ¦   auth-menu-button.component.spec.ts
+¦   ¦   ¦   ¦   ¦   ¦   auth-menu-button.component.ts
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   +---auth-menu-user
+¦   ¦   ¦   ¦   ¦           auth-menu-user.component.html
+¦   ¦   ¦   ¦   ¦           auth-menu-user.component.scss
+¦   ¦   ¦   ¦   ¦           auth-menu-user.component.spec.ts
+¦   ¦   ¦   ¦   ¦           auth-menu-user.component.ts
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   +---auth-register
+¦   ¦   ¦   ¦   ¦       auth-register.component.html
+¦   ¦   ¦   ¦   ¦       auth-register.component.scss
+¦   ¦   ¦   ¦   ¦       auth-register.component.spec.ts
+¦   ¦   ¦   ¦   ¦       auth-register.component.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---models
+¦   ¦   ¦   ¦   ¦       user.model.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---services
+¦   ¦   ¦   ¦           auth.guard.service.spec.ts
+¦   ¦   ¦   ¦           auth.guard.service.ts
+¦   ¦   ¦   ¦           auth.service.spec.ts
+¦   ¦   ¦   ¦           auth.service.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---feed
+¦   ¦   ¦   ¦   ¦   feed.module.ts
+¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   +---feed-item
+¦   ¦   ¦   ¦   ¦       feed-item.component.html
+¦   ¦   ¦   ¦   ¦       feed-item.component.scss
+¦   ¦   ¦   ¦   ¦       feed-item.component.spec.ts
+¦   ¦   ¦   ¦   ¦       feed-item.component.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---feed-list
+¦   ¦   ¦   ¦   ¦       feed-list.component.html
+¦   ¦   ¦   ¦   ¦       feed-list.component.scss
+¦   ¦   ¦   ¦   ¦       feed-list.component.spec.ts
+¦   ¦   ¦   ¦   ¦       feed-list.component.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---feed-upload
+¦   ¦   ¦   ¦   ¦   ¦   feed-upload.component.html
+¦   ¦   ¦   ¦   ¦   ¦   feed-upload.component.scss
+¦   ¦   ¦   ¦   ¦   ¦   feed-upload.component.spec.ts
+¦   ¦   ¦   ¦   ¦   ¦   feed-upload.component.ts
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   +---feed-upload-button
+¦   ¦   ¦   ¦   ¦           feed-upload-button.component.html
+¦   ¦   ¦   ¦   ¦           feed-upload-button.component.scss
+¦   ¦   ¦   ¦   ¦           feed-upload-button.component.spec.ts
+¦   ¦   ¦   ¦   ¦           feed-upload-button.component.ts
+¦   ¦   ¦   ¦   ¦           
+¦   ¦   ¦   ¦   +---models
+¦   ¦   ¦   ¦   ¦       feed-item.model.ts
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---services
+¦   ¦   ¦   ¦           feed.provider.service.spec.ts
+¦   ¦   ¦   ¦           feed.provider.service.ts
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---home
+¦   ¦   ¦   ¦       home.module.ts
+¦   ¦   ¦   ¦       home.page.html
+¦   ¦   ¦   ¦       home.page.scss
+¦   ¦   ¦   ¦       home.page.spec.ts
+¦   ¦   ¦   ¦       home.page.ts
+¦   ¦   ¦   ¦       
+¦   ¦   ¦   +---menubar
+¦   ¦   ¦           menubar.component.html
+¦   ¦   ¦           menubar.component.scss
+¦   ¦   ¦           menubar.component.spec.ts
+¦   ¦   ¦           menubar.component.ts
+¦   ¦   ¦           
+¦   ¦   +---assets
+¦   ¦   ¦   ¦   shapes.svg
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---icon
+¦   ¦   ¦           favicon.png
+¦   ¦   ¦           
+¦   ¦   +---environments
+¦   ¦   ¦       environment.prod.ts
+¦   ¦   ¦       environment.ts
+¦   ¦   ¦       
+¦   ¦   +---theme
+¦   ¦           variables.scss
+¦   ¦           
+¦   +---udagram_tests
+¦           git_test.sh
+¦           
++---udagram-reverseproxy
+        Dockerfile
+        nginx.conf
+        
